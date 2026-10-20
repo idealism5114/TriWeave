@@ -1,0 +1,190 @@
+{
+  "package": "TriWeave",
+  "protocol": "TRIWEAVE_RAW15_V1",
+  "generated_utc": "2026-10-15T05:33:12.797002+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 473,
+      "sha256": "0c42dd033dc9664ada55bf8af2a5b19a0b0ccc0a71f350d3c88e39ddac605173"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10514,
+      "sha256": "0bcbcc1f341ce21747f652b1eeddcd12d46da35f6d96353437c540e2cbf9363f"
+    },
+    {
+      "path": "checkpoints/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "configs/bond_variables_25.csv",
+      "bytes": 2834,
+      "sha256": "b692ef5ba49a6ccfa914d244562b46ab133de8612f6b7bfb7e80c66b244c1be7"
+    },
+    {
+      "path": "configs/futures_universe_38_plus4.csv",
+      "bytes": 3292,
+      "sha256": "47078240135c417a101947533452cb0240c8ce844d39f7994aee32b6f1ca68bb"
+    },
+    {
+      "path": "configs/project.json",
+      "bytes": 624,
+      "sha256": "57de625a792a9fdddc04fcf21e43a155dc8a0c60d6a90f4f95d3e02e12bdfe65"
+    },
+    {
+      "path": "data/audit/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/derived/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/manifests/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/manifests/non_stock_registry.csv",
+      "bytes": 4048,
+      "sha256": "2bcea928ff51f878db348010044c0d9408415d96194d664e558e3561520b7d39"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/sealed/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/standardized/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "bytes": 1809,
+      "sha256": "3757e4bc7135bb06c3dcd39766ab065ef22b011f461fdb4b6862686875f1d94c"
+    },
+    {
+      "path": "docs/data_protocol.md",
+      "bytes": 2227,
+      "sha256": "4cd59a51f89e7dee47a0be724271828492a878622616144f7073bb5a2605327f"
+    },
+    {
+      "path": "docs/sources_and_scope.md",
+      "bytes": 3310,
+      "sha256": "42265d4546b9c1d321b1e3fa8537bd3380cef05e9fe6f3305d944430a642778b"
+    },
+    {
+      "path": "examples/stock_manifest_example.csv",
+      "bytes": 35,
+      "sha256": "1f912a4b113101bf688dd7890d966c06e4ee81cf38085994043d96ce53dc67e5"
+    },
+    {
+      "path": "experiments/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "notebooks/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 502,
+      "sha256": "2a48586b5054904be284ee46d4065eaf608039e6e68981aeaf3e7dad1093c2fd"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 15,
+      "sha256": "e0c25a27fb01d2d70545480030f1535cb9c790c410b70f853aaabdea0919a534"
+    },
+    {
+      "path": "scripts/collect_all.sh",
+      "bytes": 850,
+      "sha256": "fef8250db5be437610ee48656bcf70dad4de6d01a8d8eea657a42da21e874b64"
+    },
+    {
+      "path": "src/triweave/__init__.py",
+      "bytes": 106,
+      "sha256": "710c90b3f85a8b482235f67247f46cf61170f6c18104add096ffdff69415fd04"
+    },
+    {
+      "path": "src/triweave/__main__.py",
+      "bytes": 69,
+      "sha256": "d045c3f1d4780e5d37bcb5aed5eb0de1dc646c6bcff39b34b0f7a90a3269131c"
+    },
+    {
+      "path": "src/triweave/assets.py",
+      "bytes": 4458,
+      "sha256": "a2f6eb00c68dcaaeacbf7807b00e25318729c611ca67cf643e50f2d58e28ab21"
+    },
+    {
+      "path": "src/triweave/audit.py",
+      "bytes": 5296,
+      "sha256": "f44564afd2c434c799bb999f5d0680a86bda8ff4eb59e93814b7f6eeb8c8ad66"
+    },
+    {
+      "path": "src/triweave/cli.py",
+      "bytes": 7094,
+      "sha256": "ce512949d8534ff546d0a372bb0fbb8f0870e7a930755e1c2d053167718a5ad7"
+    },
+    {
+      "path": "src/triweave/collect.py",
+      "bytes": 13685,
+      "sha256": "5c7cd3461e080d0a3c93abe18f9dea1cddf8ee15c11ffb9415cd017ddb95321e"
+    },
+    {
+      "path": "src/triweave/normalize.py",
+      "bytes": 7317,
+      "sha256": "b6a19143fc0ebb9a9724fdf6cecc983775e392533caf9f6be814994cbf5c1b95"
+    },
+    {
+      "path": "src/triweave/universe.py",
+      "bytes": 7658,
+      "sha256": "bfbc30578b0ac63452f927b2a462a08d2d80f7c0ab1daf32a97f10f85908f136"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 106,
+      "sha256": "8c75b617726556b77f7765ea7fb2d37a0203fddb8c336687122f0030b78f3bf9"
+    },
+    {
+      "path": "tests/test_assets.py",
+      "bytes": 705,
+      "sha256": "3fc672f324b92e350e5465824fadd4dfe8c1c8fa2ffd32dc54e3fa9359102385"
+    },
+    {
+      "path": "tests/test_collect.py",
+      "bytes": 5140,
+      "sha256": "92d642daf995f67e058c511718ff335e57cb6141b0849fc722b090f5cd164974"
+    },
+    {
+      "path": "tests/test_normalize.py",
+      "bytes": 3543,
+      "sha256": "4b3ce64050b399ed4a6024dc8b4888f13dc9499f0b753a863c5308a9937a67e1"
+    },
+    {
+      "path": "tests/test_universe.py",
+      "bytes": 2713,
+      "sha256": "1f7796b8a86074ac8ae3f248ed66c2e7452d94df7c0188d6e60a67dc08bb0e83"
+    }
+  ],
+  "offline_tests": "22 passed",
+  "live_data_collection": "NOT_RUN_in_current_offline_environment",
+  "stock_manifest_status": "263 real stock IDs must be imported from user Clean V1 or verified reconstruction"
+}

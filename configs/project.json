@@ -1,0 +1,16 @@
+{
+  "project": "TriWeave",
+  "protocol": "TRIWEAVE_RAW15_V1",
+  "research_start": "2011-10-01",
+  "research_end": "2026-09-30",
+  "stock_expected_count": 263,
+  "bond_expected_count": 25,
+  "futures_target_expected_count": 24,
+  "futures_aux_expected_count": 14,
+  "stock_adjust": "",
+  "curve_chunk_days": 300,
+  "contract_chunk": "monthly",
+  "retry_attempts": 3,
+  "request_pause_seconds": 1.0,
+  "source_policy": "AKShare is a transport/aggregator; preserve upstream provenance, failed retrievals and original files. Never bfill, fabricate pre-listing history, or turn stitched contract closes into tradable returns."
+}

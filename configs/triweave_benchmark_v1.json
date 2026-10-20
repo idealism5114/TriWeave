@@ -1,0 +1,747 @@
+{
+  "dataset_protocol": "TRIWEAVE_23_AFTER_CLOSE_RESEARCH_V1",
+  "input_shape": [
+    "B",
+    20,
+    311,
+    26
+  ],
+  "output_shape": [
+    "B",
+    4,
+    23
+  ],
+  "horizons": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "bond_encoder": "joint shared BOND in SLBR; parameter-free joint summaries in DeepV3",
+  "models": [
+    {
+      "model_id": "baseline/RNN",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "RNN",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/GRU",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "GRU",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/LSTM",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "LSTM",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/VanillaTransformer",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "VanillaTransformer",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/GraphWaveNet",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "GraphWaveNet",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/MTGNN",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "MTGNN",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/MSGNet",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "MSGNet",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": false,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/CrossGNN",
+      "family": "baseline",
+      "group": "DeepV3_latest",
+      "source": "cmgm/models/comparison_baselines.py",
+      "source_variant": "CrossGNN",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": false,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/TCN",
+      "family": "baseline",
+      "group": "supplemental_latest_TCN_repair",
+      "source": "cmgm/models/formal_baselines_v2.py",
+      "source_variant": "TCN",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/Ridge",
+      "family": "baseline",
+      "group": "supplemental_fixed_classical",
+      "source": "cmgm/scripts/fixed_baseline_protocol.py",
+      "source_variant": "Ridge",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": null,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/RandomForest",
+      "family": "baseline",
+      "group": "supplemental_fixed_classical",
+      "source": "cmgm/scripts/fixed_baseline_protocol.py",
+      "source_variant": "RandomForest",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": null,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "baseline/XGBoost",
+      "family": "baseline",
+      "group": "supplemental_fixed_classical",
+      "source": "cmgm/scripts/fixed_baseline_protocol.py",
+      "source_variant": "XGBoost",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": null,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/full",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "FullD0B-Control",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/commodity_only",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "CommodityOnly",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_stock",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Stock",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_bond",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Bond",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_spatial",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Spatial Branch",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_temporal",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Temporal Branch",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_graph",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Graph Propagation",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_tempweighted",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o TempWeighted",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_markov_switching",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Markov Switching",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_microstate",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Microstate",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_switch_kl",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Switch KL",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_balanced_readout",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Balanced Readout",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_adaptive_gate",
+      "family": "ablation",
+      "group": "formal_SLBR_controls",
+      "source": "cmgm/models/formal_d0b_ablation.py",
+      "source_variant": "w/o Adaptive Fusion Gate",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/fixed_mean_fusion",
+      "family": "ablation",
+      "group": "phase4_simplification",
+      "source": "cmgm/models/phase4_variants.py",
+      "source_variant": "switching_latent_fixed_mean_fusion",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/no_graph_prior",
+      "family": "ablation",
+      "group": "phase4_simplification",
+      "source": "cmgm/models/phase4_variants.py",
+      "source_variant": "switching_latent_no_graph_prior",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/uniform_router",
+      "family": "ablation",
+      "group": "phase4_simplification",
+      "source": "cmgm/models/phase4_variants.py",
+      "source_variant": "switching_latent_uniform_router",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/simplified_all",
+      "family": "ablation",
+      "group": "phase4_simplification",
+      "source": "cmgm/models/phase4_variants.py",
+      "source_variant": "switching_latent_simplified_all",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/global_concat_fusion",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/node_history_readout.py",
+      "source_variant": "switching_latent_balanced_concat_fusion",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/concat_linear64",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/phase5_variants.py",
+      "source_variant": "ConcatLinear64",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/gated_concat128",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/phase5_variants.py",
+      "source_variant": "GatedConcat128",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/mean_concat128",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/phase5_variants.py",
+      "source_variant": "MeanConcat128",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/residual_fusion",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/phase6_variants.py",
+      "source_variant": "residual_cross_branch_fusion",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/branch_preserving_fusion",
+      "family": "ablation",
+      "group": "fusion_controls",
+      "source": "cmgm/models/phase6_variants.py",
+      "source_variant": "branch_preserving_fusion",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/node_history_mean",
+      "family": "ablation",
+      "group": "node_history_controls",
+      "source": "cmgm/models/node_history_readout.py",
+      "source_variant": "switching_latent_balanced_node_history_mean",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    },
+    {
+      "model_id": "ablation/node_history_attention",
+      "family": "ablation",
+      "group": "node_history_controls",
+      "source": "cmgm/models/node_history_readout.py",
+      "source_variant": "switching_latent_balanced_node_history_attention",
+      "input_assets": 311,
+      "features": 26,
+      "targets": 23,
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "prefix_causal_encoder": true,
+      "origin_window_causal": true,
+      "trained_on_TriWeave": false
+    }
+  ],
+  "training_protocol": {
+    "seed": 42,
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "batch_size": 32,
+    "max_epochs": 200,
+    "patience": 10,
+    "gradient_clip_norm": 1.0,
+    "AMP": false,
+    "shuffle": false,
+    "drop_last": false,
+    "loss": "equal mean of nonempty masked horizon Huber .02",
+    "switch_KL_multiplier": 0.25,
+    "scheduler": "ReduceLROnPlateau factor.5 patience5",
+    "selection": "equal four-horizon commodity-macro VAL MAE",
+    "TEST": "PROHIBITED",
+    "hyperparameter_search": false,
+    "comparator": "shared-bond SLBR, fresh initialization; old four-encoder checkpoint is not a reference fit"
+  },
+  "automatic_training": false
+}

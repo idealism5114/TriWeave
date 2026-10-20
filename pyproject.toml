@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triweave-data"
+version = "0.1.0"
+description = "Auditable three-market historical market data acquisition"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0,<3.0", "akshare>=1.16"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+rescue = ["baostock>=0.8.9", "tushare>=1.4"]
+
+[project.scripts]
+triweave = "triweave.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

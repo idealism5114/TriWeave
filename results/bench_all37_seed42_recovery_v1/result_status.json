@@ -1,0 +1,9 @@
+{
+  "complete": 37,
+  "expected": 37,
+  "all_complete": true,
+  "missing_models": [],
+  "unit": "decimal_return",
+  "TEST_used_for_selection": false,
+  "CONFIRMATORY_RESEARCH_READY": false
+}

@@ -1,0 +1,45 @@
+{
+  "model_class": "triweave.models.shared_bond.TriWeaveSLBR",
+  "model_config": {
+    "name": "triweave_switching_latent_balanced_readout_shared_bond_v1",
+    "feature_dim": 26,
+    "hidden_dim": 64,
+    "node_dim": 32,
+    "d_model": 128,
+    "graph_heads": 8,
+    "temporal_heads": 4,
+    "temporal_layers": 2,
+    "ffn_dim": 256,
+    "regimes": 3,
+    "z_dim": 64,
+    "max_len": 20,
+    "dropout": 0.3,
+    "graph_attention_dropout": 0.1,
+    "graph_prior_scale": 0.5,
+    "mixhop_K": 2,
+    "mixhop_beta": 0.05,
+    "sticky_alpha": 0.5,
+    "switch_beta_max": 0.0005,
+    "switch_warmup": 20,
+    "horizons": [
+      1,
+      5,
+      10,
+      20
+    ]
+  },
+  "dataset_protocol_id": "TRIWEAVE_23_AFTER_CLOSE_RESEARCH_V1",
+  "economic_type_to_encoder": {
+    "STOCK_PRICE": "STOCK_PRICE",
+    "BOND_YIELD": "BOND",
+    "BOND_WEALTH_INDEX": "BOND",
+    "FUTURES_CONTINUOUS_PRICE": "FUTURES_CONTINUOUS_PRICE"
+  },
+  "trainable_encoder_groups": [
+    "STOCK_PRICE",
+    "BOND",
+    "FUTURES_CONTINUOUS_PRICE"
+  ],
+  "feature_schema_and_scaler_unchanged": true,
+  "training_run": false
+}
